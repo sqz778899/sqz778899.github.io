@@ -32,19 +32,17 @@
 	height: 784px;
 	text-decoration: none;
 }
-.prefab{display: none}
-#PrefabBtn:checked~.prefab{
+.prefab{display: none}#PrefabBtn:checked~.prefab{
 	display: block;
 }
+.Shader{display: none}#ShaderBtn:checked~.Shader{
+	display: block;
+}
+.Script{display: none}#ScriptBtn:checked~.Script{display: block;}
 
-.Shader{display: none}
-#ShaderBtn:checked~.Shader{
-	display: block;
-}
 label{
 	display: grid;
 }
-
 label:hover{
 	color:#B1B1B1;
 }
@@ -60,27 +58,18 @@ label:hover{
 	height: 784px;
 }
 
-.new{
-	text-align: center;
-	margin:5px 0 5px 0;
-	list-style: none;
-}
-.random{
-	text-align: center;
-	margin:5px 0 5px 0;
-	list-style: none;
-}
-.hot{
-	text-align: center;
-	margin:5px 0 5px 0;
-	list-style: none;
-}
+.pbStruct,.pbName,.pbPos,.pbPath,.stShader,.alophaZOff,.misRender{font-size: 90%;text-align: center;margin:10px 0 10px 0;list-style: none;}
 
-.widget-tab .widget-box ul{
-	display:none
-}
-#new:checked ~ .widget-title .new,#hot:checked ~ .widget-title .hot,#random:checked ~ .widget-title .random{background:#F7F7F7}
-#new:checked ~ .widget-box .new-list,#hot:checked ~ .widget-box .hot-list,#random:checked ~ .widget-box .random-list{display:block}
+.widget-tab .widget-box ul{display:none}
+
+#pbStruct:checked ~ .widget-title .pbStruct,   #pbName:checked ~ .widget-title .pbName,   #pbPos:checked ~ .widget-title .pbPos{background:#F7F7F7}
+#pbStruct:checked ~ .widget-box .pbStruct-list,#pbName:checked ~ .widget-box .pbName-list,#pbPos:checked ~ .widget-box .pbPos-list{display:block}
+
+#pbPath:checked ~ .widget-title .pbPath,   #stShader:checked ~ .widget-title .stShader,   #alophaZOff:checked ~ .widget-title .alophaZOff{background:#F7F7F7}
+#pbPath:checked ~ .widget-box .pbPath-list,#stShader:checked ~ .widget-box .stShader-list,#alophaZOff:checked ~ .widget-box .alophaZOff-list{display:block}
+
+#misRender:checked ~ .widget-title .misRender{background:#F7F7F7}
+#misRender:checked ~ .widget-box .misRender-list{display:block}
 
 table{
 	 border-collapse: collapse; border: none; width: 200px;
@@ -92,4 +81,3 @@ table{
 	width: 80%;
 	padding-left: 10%;
 }
-
