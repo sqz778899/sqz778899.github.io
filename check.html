@@ -11,16 +11,24 @@
 	  <h1 style="text-align: center">Vgame 项目全资源检查</h1></section>
   <div id="content">
 	  <div class="widget widget-tab">
-		<input type="radio" name="widget-tab" id="new" checked="checked"/>
-		<input type="radio" name="widget-tab" id="hot"/>
-		<input type="radio" name="widget-tab" id="random"/>
+		<input type="radio" name="widget-tab" id="pbStruct"/>
+		<input type="radio" name="widget-tab" id="pbName"/>
+		<input type="radio" name="widget-tab" id="pbPos"/>
+		<input type="radio" name="widget-tab" id="pbPath"/>
+		  
+		<input type="radio" name="widget-tab" id="stShader"/>
+		<input type="radio" name="widget-tab" id="alophaZOff"/>
+		  
+		<input type="radio" name="widget-tab" id="misRender"/>
 		<div class="bbb">
 			<h3><label for="PrefabBtn">场景Prefab</label></h3>
 			<input id="PrefabBtn" type="checkbox">
 			<div class="prefab">
 				<ul>
-					<li class="new"><label for="new">Prefab结构错误</label></li>
-					<li class="hot"><label for="hot">丢失Renderer</label></li>
+					<li class="pbStruct"><label for="pbStruct">Prefab结构错误</label></li>
+					<li class="pbName"><label for="pbName">Prefab命名错误</label></li>
+					<li class = "pbPos"><label for="pbPos">Prefab坐标不干净</label></li>
+					<li class = "pbPath"><label for="pbPath">Prefab路径不正确</label></li>
 				</ul>
 			</div>
 			
@@ -28,15 +36,23 @@
 			<input id="ShaderBtn" type="checkbox">
 			<div class="Shader">
 				<ul>
-			  		<li class = "random"><label for="random">包含Standard</label></li>
+					<li class = "stShader"><label for="stShader">包含StandardShader</label></li>
+					<li class = "alophaZOff"><label for="alophaZOff">滥用alphaZOff</label></li>
 				</ul>
 			</div>
 			
+		  <h3><label for="ScriptBtn">脚本相关</label></h3>
+			<input id="ScriptBtn" type="checkbox">
+			<div class="Script">
+				<ul>
+					<li class = "misRender"><label for="misRender">丢失Renderer</label></li>
+				</ul>
+			</div>
 		</div>
 	
    
 		<div class="widget-box">
-			<ul class="new-list">
+			<ul class="pbStruct-list">
 				<table class="info">
 				  <tr>
 					<td>Assets/res/character/3d/animation_pv/hero/empire/pv_he_tiyar_148_01/pb_pv_he_tiyar_148_01_su.prefab</td>
@@ -55,11 +71,25 @@
 				  </tr>
 				</table>
 			</ul>	
-			<ul class="hot-list">
+			<ul class="pbName-list">
 			<li>ppppppppppppppp</li>
 			</ul>
-			<ul class="random-list">
+			<ul class="pbPos-list">
 			<li>vvvvvvvvvvvvvvvv</li>
+			</ul>
+			<ul class="pbPath-list">
+			<li>Prefab路径不正确</li>
+			</ul>
+			
+			<ul class="stShader-list">
+			<li>StandardShader</li>
+			</ul>
+			
+			<ul class="alophaZOff-list">
+			<li>滥用alphaZOff</li>
+			</ul>
+			<ul class="misRender-list">
+			<li>misRender</li>
 			</ul>
 		</div>
 			 
