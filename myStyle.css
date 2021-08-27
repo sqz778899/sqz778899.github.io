@@ -39,6 +39,7 @@
 	display: block;
 }
 .Script{display: none}#ScriptBtn:checked~.Script{display: block;}
+.Terrain{display: none}#TerrainBtn:checked~.Terrain{display: block;}
 
 label{
 	display: grid;
@@ -58,7 +59,7 @@ label:hover{
 	height: 784px;
 }
 
-.pbStruct,.pbName,.pbPos,.pbPath,.stShader,.alophaZOff,.misRender{font-size: 90%;text-align: left;margin:10px 0 10px 0;list-style: none;}
+.pbStruct,.pbName,.pbPos,.pbPath,.stShader,.alophaZOff,.misRender,.terrainSort{font-size: 90%;text-align: left;margin:10px 0 10px 0;list-style: none;}
 
 .widget-tab .widget-box ul{display:none}
 
@@ -68,8 +69,8 @@ label:hover{
 #pbPath:checked ~ .widget-title .pbPath,   #stShader:checked ~ .widget-title .stShader,   #alophaZOff:checked ~ .widget-title .alophaZOff{background:#F7F7F7}
 #pbPath:checked ~ .widget-box .pbPath-list,#stShader:checked ~ .widget-box .stShader-list,#alophaZOff:checked ~ .widget-box .alophaZOff-list{display:block}
 
-#misRender:checked ~ .widget-title .misRender{background:#F7F7F7}
-#misRender:checked ~ .widget-box .misRender-list{display:block}
+#misRender:checked ~ .widget-title .misRender,    #terrainSort:checked ~ .widget-title .terrainSort{background:#F7F7F7}
+#misRender:checked ~ .widget-box .misRender-list, #terrainSort:checked ~ .widget-box .terrainSort-list{display:block}
 
 table{
 	 border-collapse: collapse; border: none; width: 200px;
